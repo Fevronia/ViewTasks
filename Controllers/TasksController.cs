@@ -41,6 +41,10 @@ namespace ViewTasks.Controllers
         {
             return PartialView("_TimeToBuy");
         }
+        public IActionResult TimeToBuy()
+        {
+            return PartialView("_TimeToBuy");
+        }
 
     }
 }
