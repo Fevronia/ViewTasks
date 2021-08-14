@@ -1,0 +1,16 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    List<Products> products = new List<Products>();
+    products.Add(new Products() { Name = "Bread", Price = 10 });
+    products.Add(new Products() { Name = "Milk", Price = 15 });
+    products.Add(new Products() { Name = "Cheese", Price = 20 });
+    products.Add(new Products() { Name = "Tomato", Price = 5 });
+    products.Add(new Products() { Name = "Potato", Price = 10 });
+}
+@foreach (Products prod in products)
+{
+                <ul>@prod.Name</ul><ul>@prod.Price</ul>
+                
+            }
