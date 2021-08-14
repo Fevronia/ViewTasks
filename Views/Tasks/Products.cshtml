@@ -8,9 +8,16 @@
     products.Add(new Products() { Name = "Cheese", Price = 20 });
     products.Add(new Products() { Name = "Tomato", Price = 5 });
     products.Add(new Products() { Name = "Potato", Price = 10 });
+    
 }
+<h2>Information about product</h2>
+
 @foreach (Products prod in products)
 {
-                <ul>@prod.Name</ul><ul>@prod.Price</ul>
+<p>
+    @prod.Name
+    @prod.Price
+
+</p>
                 
-            }
+ }

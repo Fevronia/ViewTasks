@@ -2,4 +2,43 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    Dictionary<string, int> shopList = new Dictionary<string, int>
+           {
+               {"Potato", 4 },
+               {"Milk", 1 },
+               {"Bread",3 }
+           };
 }
+<h1>Our Shopping list</h1>
+@foreach (KeyValuePair<string, int> item in shopList)
+{
+<table  cellpadding="0"
+           cellspacing="0" style="border: thin solid #333300;
+    width: 84px; height: 44px; text-align: center;" border="1">
+    <tr>
+
+        <td class="style4">@item.Key</td>
+        <td class="style4">@item.Value</td>
+
+
+    </tr>
+</table>
+
+    
+    
+    
+
+
+}
+@*<table align="left" cellpadding="0"
+           cellspacing="0" style="border: thin solid #333300;
+    width: 445px; height: 174px; text-align: center;" border="1">
+        
+        <tr>
+
+            <td>Rahul</td>
+            <td>Flex Developer</td>
+
+        </tr>
+
+    </table>*@
